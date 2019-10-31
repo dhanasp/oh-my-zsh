@@ -15,38 +15,8 @@ export ZSH=$HOME/.oh-my-zsh
 #Autocorrect Commands
 setopt correct
 
-#My Customizations
-POWERLEVEL9K_MODE='nerdfont-complete'
 
-DEFAULT_USER=$USER
-
-POWERLEVEL9K_HOME_FOLDER_ABBREVIATION=""
-
-POWERLEVEL9K_DIR_PATH_SEPARATOR=$'\uE0B1'
-
-POWERLEVEL9K_ALWAYS_SHOW_USER="true"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_context root_indicator dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-
-POWERLEVEL9K_CUSTOM_CONTEXT="custom_context"
-custom_context(){
- echo NAME_TO_DISPLAY
-}
-POWERLEVEL9K_CUSTOM_CONTEXT_BACKGROUND='green'
-POWERLEVEL9K_CUSTOM_CONTEXT_FOREGROUND='black'
-
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='039'
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='black'
-
-POWERLEVEL9K_DIR_HOME_BACKGROUND='038'
-POWERLEVEL9K_DIR_Home_FOREGROUND='black'
-
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='039'
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='black'
-
-
-
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -141,7 +111,3 @@ alias wifi='echo "SSID:" && read a && security find-generic-password -ga $a | gr
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export HOMEBREW_NO_AUTO_UPDATE=1
-
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=5
-POWERLEVEL9K_SHORTEN_DELIMITER=""
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"

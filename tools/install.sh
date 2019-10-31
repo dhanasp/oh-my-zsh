@@ -68,7 +68,7 @@ main() {
       exit 1
     fi
   fi
-  env git clone --depth=1 https://github.com/nrjais/oh-my-zsh.git -b master "$ZSH" || {
+  env git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git "$ZSH" || {
     printf "Error: git clone of oh-my-zsh repo failed\n"
     exit 1
   }
@@ -106,7 +106,6 @@ main() {
   fi
 
   brew install autojump
-  git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
   git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
   CHECK_FONT=$(brew cask list | grep "nerd-font" | wc -l)
